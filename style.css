@@ -1,0 +1,149 @@
+@font-face {
+    font-family:"Young Serif";
+    /* src: url("fonts/YoungSerif.ttf") format("ttf"); */
+    src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+}
+.container{
+    background-color: #fff;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 25px 30px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+header{
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+img{
+    max-width: 100%;
+    padding:20px;
+    height: auto;
+    border-radius: 30px;
+    display: block;
+}
+
+@media screen and (max-width:440px) {
+    .container{
+        margin: 0;
+        border-radius: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        padding: 0 16px;
+        margin: 0 14px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+        border-radius: 0;
+    }
+}
+
+.title{
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: "Young Serif";
+    font-weight: 400;
+}
+
+.description,h2+p{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+.container__section{
+    margin-top:36px;
+    padding: 12px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+.preparation__title{
+    color:hsl(332, 51%, 32%);
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.preparation__item{
+    margin: 0;
+    padding-bottom: 10px;
+    padding: 0px 0px 10px 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+#ingredients__title, #instructions__title, #nutrition__title{
+    color: hsl(14, 45%, 36%);
+    font-size: 36px;
+}
+
+.ingredients__container, .instructions__container{
+    padding-left: 20px;
+}
+
+.ingredients__items, .instructions__items{
+    padding: 0 0 10px 8px;
+    color: hsl(30, 10%, 34%);
+    font-size: 20px;
+}
+
+.divider{
+    border: 1px solid hsl(30, 18%, 87%);
+}
+
+/* --NUTRITION SECTION-- */
+.nutrition__section{
+    max-width: 100%;
+}
+
+#nutrition__title{
+    margin: 29.88px 0;
+}
+
+#nutrition__title + p{
+    padding: 0;
+}
+
+.nutrition__table{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition__table:last-child{
+    border: none;
+}
+
+.nutrition__item{
+    width: 280px;
+    color: hsl(30, 10%, 34%);
+}
+
+.amount{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
